@@ -23,7 +23,7 @@
      class navbar-expand-lg akan membuat semua opsi atau pilihan(list) dalam navbar akan terbuka diperlihatkan tanpa harus menggunakan hamburger ketika ukuran layar lebih dari 992px
      class bg-body-tertiary adalah untuk menetapkan warna background menjadi warna pada variable tertiary 
      class sticky-top untuk membuat navbar tetap berada diatas layar ketika discroll kebawah-->
-    <nav class="navbar navbar-expand-lg bg-primary sticky-top rounded">
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top rounded mt-1">
       <!-- Membuat div dengan class container-fluid yang berarti width dari div ini akan selalu 100% pada ukuran layar manapun -->
       <div class="container-fluid  rounded">
         <a class="navbar-brand" href="#">Evan's Portofolio</a>
@@ -53,6 +53,8 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="https://pwa-library-of-books.vercel.app/">Library Of Books</a></li>
+                <li><a class="dropdown-item" href="https://github.com/Ran-DoesntRun/CI4-Muse-Music">Muse Music</a></li>
+
               </ul>
             </li>
           </ul>
@@ -69,23 +71,54 @@
         <!-- class sticky-top untuk membuat navbar tetap berada diatas layar ketika discroll kebawah 
          style z-index:1019 digunakan sehingga div ini tidak akan menutupi navbar yang karena navbar sticky
          top:100px adalah untuk membuat div ini tetap berada 100px dibawah layar teratas -->
-        <div class="sticky-lg-top" style="top:100px; z-index:1019;">
+        <div class="sticky-lg-top" style="top:70px; z-index:1019;">
           <h2 class="text-center">ABOUT ME</h2>
-          <img src="./images/profile.jpg" alt="Foto Profil Evan" class="img-fluid rounded mx-auto d-block">
+          <img src="./images/profile.png" alt="Foto Profil Evan" class="img-fluid rounded mx-auto d-block ">
+          <h4 class="text-center">Evan Febrian</h4>
           <div class="btn-group w-100 mt-1">
             <a href="https://drive.google.com/drive/folders/1kSjrdXGDyoZl0EhV4WHt-dck8ozyg-mB?usp=sharing"
               class="text-decoration-none btn btn-primary">CV</a>
           </div>
-          <p class="text-center">
-            My name is Evan Febrian, I'm a 3rd years college student at Teknologi Digital Indonesia University majoring
-            in
-            Informatics. I've been curious and pursuing the path of Web Developer, especially BackEnd Developer.
+          <div class="btn-group w-100 mt-1">
+            <p class="text-decoration-none btn bg-danger text-white"> evanpersia0224@gmail.com</a>
+          </div>
+          <div class="container p-0 d-grid column-gap-4 mt-1" style="grid-template-columns: repeat(4, 1fr);">
+            <a href="https://www.instagram.com/2nave_4evan/">
+              <picture>
+                <source srcset="./images/instagram-small.png" media="(max-width: 600px)">
+                <source srcset="./images/instagram.png">
+                <img src="./images/instagram.png" alt="Instagram" class="img-fluid">
+              </picture>
+            </a>
+            <a href="https://web.facebook.com/evan.febrian.5055">
+              <picture>
+                <source srcset="./images/facebook-small.png" media="(max-width: 600px)">
+                <source srcset="./images/facebook.png">
+                <img src="./images/facebook.png" alt="Facebook" class="img-fluid">
+              </picture>
+            </a>
+            <a href="https://www.linkedin.com/in/evan-febrian-02a103248/">
+              <picture>
+                <source srcset="./images/linkedin-small.png" media="(max-width: 600px)">
+                <source srcset="./images/linkedin.png">
+                <img src="./images/linkedin.png" alt="Github" class="img-fluid">
+              </picture>
+            </a>
+            <a href="https://github.com/Ran-DoesntRun">
+              <picture>
+                <source srcset="./images/github-small.png" media="(max-width: 600px)">
+                <source srcset="./images/github.png">
+                <img src="./images/github.png" alt="Github" class="img-fluid">
+              </picture>
+            </a>
+          </div>
+          <p style="text-align: justify;" class="mt-3">
+            Bachelor's degree in Informatics from Universitas Teknologi Digital Indonesia, with a strong foundation in
+            software
+            development, data structures, algorithms, and database management. Experienced in designing and building web
+            applications, with a keen eye for writing clean, functional, and efficient code.
           </p>
-          <p class="text-center">
-            If you have any job offer you can contact me via my email <span
-              class="text-primary"><i>evanpersia0224@gmail.com</i></span> or
-            through one of my <a href="#sosmed" style="color:rgb(255, 72, 0)">social media</a>
-          </p>
+
         </div>
       </div>
       <!-- Div ini akan mengambil 9 kolom grid pada ukuran layar lebih dari 992px 
@@ -93,7 +126,7 @@
       <div class="col-12 col-lg-9 ">
         <!-- class p-2 adalah untuk membuat padding sebesar 3rem -->
         <div class="p-2" id="education">
-          <h2 class="text-center">EDUCATION</h2>
+          <h2 class="text-center mt-1">EDUCATION</h2>
           <!-- Dibawah ini adalah div untuk membuat card / kartu dengan menggunakan bootstrap 
            class card adalah untuk mendefinisikan variabel yang digunakn untuk membuat card-->
           <div class="card">
@@ -104,9 +137,9 @@
               <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
               <h6 class="card-subtitle mb-2 text-body-secondary">Information Technology</h6>
               <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
-              <p class="card-text">Informatics</p>
-              <p class="card-text">Current GPA : 3.84</p>
-              <p class="card-text">September 2022 - Present</p>
+              <p class="my-0">Informatics</p>
+              <p class="my-0">GPA : 3.86</p>
+              <p class="my-0">September 2022 - February 2026</p>
             </div>
           </div>
           <!-- Div untuk membuat card, class mt-2 untuk membuat margin-top menjadi 0.5rem -->
@@ -123,21 +156,87 @@
             <p></p>
           </div>
         </div>
+        <div class="p-2" id="experience">
+          <h2 class="text-center">EXPERIENCE</h2>
+          <!-- Dibawah ini adalah div untuk membuat card / kartu dengan menggunakan bootstrap 
+                           class card adalah untuk mendefinisikan variabel yang digunakn untuk membuat card-->
+          <div class="card">
+            <!-- Div untuk body / tubuh kartu yang berisi isi yang akan ditampilkan pada card -->
+            <div class="card-body">
+              <!-- card-title untuk membuat judul kartu dengan menentukan margin bottom dan warna text -->
+              <h5 class="card-title">Assistant Lecturer - Database System</h5>
+              <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
+              <h6 class="card-subtitle mb-2 text-body-secondary">Indonesia Digital Technology University</h6>
+
+              <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
+              <p>• Guided students in understanding database concepts through practical SQL and database design
+                exercises.</br>
+                • Supported students in resolving query errors and breaking down relational database principles.<br />
+                • Reviewed student assignments and coding practices, ensuring adherence to clean code principles and
+                database standards.
+              </p>
+              <p class="m-0">September 2025 - January 2026</p>
+            </div>
+          </div>
+          <div class="card mt-2">
+            <!-- Div untuk body / tubuh kartu yang berisi isi yang akan ditampilkan pada card -->
+            <div class="card-body">
+              <!-- card-title untuk membuat judul kartu dengan menentukan margin bottom dan warna text -->
+              <h5 class="card-title">Assistant Lecturer - Algorithms And Programming</h5>
+              <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
+              <h6 class="card-subtitle mb-2 text-body-secondary">Indonesia Digital Technology University</h6>
+
+              <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
+              <p>• Helped students apply theoretical knowledge through hands-on HTML, CSS, and JavaScript exercises.
+                </br>
+                • Assisted students in troubleshooting code errors and explaining fundamental concepts of client-side
+                web development.<br />
+                • Evaluated student assignments and coding practices, ensuring they follow clean code principles and web
+                standards.
+
+
+              </p>
+              <p class="m-0">September 2025 - January 2026</p>
+            </div>
+          </div>
+          <div class="card mt-2">
+            <!-- Div untuk body / tubuh kartu yang berisi isi yang akan ditampilkan pada card -->
+            <div class="card-body">
+              <!-- card-title untuk membuat judul kartu dengan menentukan margin bottom dan warna text -->
+              <h5 class="card-title">Assistant Lecturer - Web Client Programming</h5>
+              <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
+              <h6 class="card-subtitle mb-2 text-body-secondary">Indonesia Digital Technology University</h6>
+
+              <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
+              <p>• Guided students in applying algorithm logic and programming fundamentals through hands-on
+                exercises.<br />
+                • Helped students identify and resolve code errors while clarifying core concepts of logic and
+                algorithms.<br />
+                • Assessed student assignments and coding practices, ensuring they meet clean code principles and
+                programming standards.
+
+              </p>
+              <p class="m-0">March 2025 - July 2026</p>
+            </div>
+          </div>
+
+
+        </div>
         <div class="card-deck p-2" id="certificate">
           <div class="row">
             <h2 class="col-12 text-center">CERTIFICATE</h2>
           </div>
-          <div class="row">
-            <div class="card col-12 col-md-6">
-              <img src="./images/1.png" class="card-img-top img-fluid"
+          <div class="row w-100 justify-content-center">
+            <div class="card col-12 col-md-5 m-1">
+              <img src="./images/1.png" class="card-img-top img-fluid mt-2"
                 alt="Certificate BackEnd Pemula Dengan JavaScript by Dicoding">
               <div class="card-body">
                 <h3 class="card-text">Dicoding</h3>
                 <p class="card-text">BackEnd Pemula Dengan JavaScript</p>
               </div>
             </div>
-            <div class="card col-12 col-md-6">
-              <img src="./images/2.png" class="card-img-top img-fluid"
+            <div class="card col-12 col-md-5 m-1">
+              <img src="./images/2.png" class="card-img-top img-fluid mt-2"
                 alt="Certificate Dasar Pemrograman JavaScript by Dicoding">
               <div class="card-body">
                 <h3 class="card-text">Dicoding</h3>
@@ -145,17 +244,17 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="card col-12 col-md-6">
-              <img src="./images/3.png" class="card-img-top img-fluid"
+          <div class="row w-100 justify-content-center">
+            <div class="card col-12 col-md-5 m-1">
+              <img src="./images/3.png" class="card-img-top img-fluid mt-2"
                 alt="Certificate Cloud Practitioner Essentials by Dicoding">
               <div class="card-body">
                 <h3 class="card-text">Dicoding</h3>
                 <p class="card-text">Cloud Practitioner Essentials</p>
               </div>
             </div>
-            <div class="card col-12 col-md-6">
-              <img src="./images/4.png" class="card-img-top img-fluid"
+            <div class="card col-12 col-md-5 m-1">
+              <img src="./images/4.png" class="card-img-top img-fluid mt-2"
                 alt="Certificate Dasar Visualisasi Data by Dicoding">
               <div class="card-body">
                 <h3 class="card-text">Dicoding</h3>
@@ -164,8 +263,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="card col-12 col-md-6 mx-auto">
-              <img src="./images/5.png" class="card-img-top img-fluid"
+            <div class="card col-12 col-md-5 m-1 mx-auto">
+              <img src="./images/5.png" class="card-img-top img-fluid mt-2"
                 alt="Certificate Dasar Manajemen Proyek by Dicoding">
               <div class="card-body">
                 <h3 class="card-text">Dicoding</h3>
@@ -174,32 +273,11 @@
             </div>
           </div>
         </div>
-        <div class="p-2" id="experience">
-          <h2 class="text-center">EXPERIENCE</h2>
-          <!-- Dibawah ini adalah div untuk membuat card / kartu dengan menggunakan bootstrap 
-                   class card adalah untuk mendefinisikan variabel yang digunakn untuk membuat card-->
-          <div class="card">
-            <!-- Div untuk body / tubuh kartu yang berisi isi yang akan ditampilkan pada card -->
-            <div class="card-body">
-              <!-- card-title untuk membuat judul kartu dengan menentukan margin bottom dan warna text -->
-              <h5 class="card-title">Assistant Lecturer</h5>
-              <!-- card-subtitle untuk membuat sub judul kartu dengan menentukan margin top dan bottom dan warna text -->
-              <h6 class="card-subtitle mb-2 text-body-secondary">Teknologi Digital Indonesia University</h6>
-              <!-- class card-text untuk mengubah margin bottom menjadi 0 -->
-              <p class="card-text">Assist professors in managing web client programming classes.</p>
-              <p class="card-text">Help students apply theoretical knowledge through practical exercises in HTML,
-                CSS, and JavaScript.</p>
-              <p class="card-text">Assist students in troubleshooting code errors.</p>
-              <p class="card-text">March 2025 - July 2025</p>
-            </div>
-          </div>
 
-
-        </div>
         <div class="p-2" id="project">
           <h2 class="text-center">PROJECT</h2>
           <div class="row">
-            <div class="card col mr-1">
+            <div class="card col m-2">
               <img src="./images/image.png" class="card-img-top p-2" alt="Library Of Books">
               <div class="card-body">
                 <h5 class="card-title">Library Of Books </h5>
@@ -213,7 +291,7 @@
                   Repository</a>
               </div>
             </div>
-            <div class="card col">
+            <div class="card col m-2">
               <img src="./images/muse-music.png" class="card-img img-fluid p-2" alt="Muse Music">
               <div class="card-body">
                 <h5 class="card-title">Muse Music </h5>
@@ -229,17 +307,12 @@
         </div>
       </div>
     </div>
-    <div class=" container-fluid p-2 text-center" id="tools">
+    <!-- <div class=" container-fluid p-2 text-center" id="tools">
       <h2>TOOLS</h2>
-      <!-- class d-grip untuk mendefinisikan display menjadi grid,
-         column-gap-2 untuk memberikan gap tiap column menjadi 0.5rem
-         style grid-template-columns untuk membuat template/peletakan column
-         repeat(7,  1fr) untuk membuat 7 column dengan lebar 1fr -->
+      
       <div style="grid-template-columns: repeat(7, 1fr);" class="container-fluid d-grid column-gap-2">
         <a href="https://www.java.com/en/">
-          <!-- Implementasi picture (responsive image) dan Theming
-           Menampilkan image yang berbeda ketika screen kurang dari 600px 
-           Pada screen yang lebih kecil dari 600px, image yang dipakai adalah yang berukuran kecil-->
+          
           <picture>
             <source srcset="./images/java-black-small.png" media="(max-width: 768px)">
             <source srcset="./images/java-black-main.png">
@@ -292,43 +365,15 @@
     </div>
     <div class="container p-2 text-center" id="sosmed">
       <h2>FOLLOW ME</h2>
-      <div class="container p-0 d-grid column-gap-4" style="grid-template-columns: repeat(4, 1fr);">
-        <a href="https://www.instagram.com/2nave_4evan/">
-          <picture>
-            <source srcset="./images/instagram-small.png" media="(max-width: 768px)">
-            <source srcset="./images/instagram.png">
-            <img src="./images/instagram.png" alt="Instagram" class="img-fluid">
-          </picture>
-        </a>
-        <a href="https://web.facebook.com/evan.febrian.5055">
-          <picture>
-            <source srcset="./images/facebook-small.png" media="(max-width: 768px)">
-            <source srcset="./images/facebook.png">
-            <img src="./images/facebook.png" alt="Facebook" class="img-fluid">
-          </picture>
-        </a>
-        <a href="https://www.linkedin.com/in/evan-febrian-02a103248/">
-          <picture>
-            <source srcset="./images/linkedin-small.png" media="(max-width: 768px)">
-            <source srcset="./images/linkedin.png">
-            <img src="./images/linkedin.png" alt="Github" class="img-fluid">
-          </picture>
-        </a>
-        <a href="https://github.com/Ran-DoesntRun">
-          <picture>
-            <source srcset="./images/github-small.png" media="(max-width: 768px)">
-            <source srcset="./images/github.png">
-            <img src="./images/github.png" alt="Github" class="img-fluid">
-          </picture>
-        </a>
-      </div>
+
     </div>
   </div>
   </div>
-  <!-- Menghubungkan script ini dengan bootstrap js untuk digunakan -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
+-->
+    <!-- Menghubungkan script ini dengan bootstrap js untuk digunakan -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
